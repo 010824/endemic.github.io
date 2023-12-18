@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=big5" />
+  <title>貢獻表格</title>
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+  <div id="container"><img src="images/headere.jpg" alt="" width="1000" height="261" />
+  <div id="leftcol">
+  <div id="nav">
+  <ul>
+    <li><a href="1.1.html">專題資訊</a></li>
+    <li><a href="1.2.html">計畫總覽</a></li>
+    <li><a href="1.3.html">計畫要素</a></li>
+    <li><a href="1.4.html">貢獻表格</a></li>
+  </ul>
+  </div></div>
+  <p>下表為列出參與人員之負責工作及貢獻百分比</p>
+  <div id="main">
+  <table border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="144" valign="top"><p><center>職稱</center></p></td>
+    <td width="116" valign="top"><p><center>參與人員</center> </p></td>
+    <td width="340" valign="top"><p><center>負責工作</center> </p></td>
+    <td width="188" valign="top"><p><center>貢獻比例</center> </p></td>
+  </tr>
+  <tr>
+    <td height="95" valign="top"><p><center>指導老師</center> </p></td>
+    <td height="60" valign="top"><p><center>黃智仁</center></p></td>
+    <td valign="top"><p><center>專題網頁指導與檢視、</center><br />
+      <center>網頁製作技術與指導、</center> <br />
+      <center>建議提供者</center> </p></td>
+    <td valign="top"><p> <center>20%</center></p></td>
+  </tr>
+  <tr>
+    <td rowspan="3" valign="top"><p>&nbsp;</p>
+      <p><center>製作學生</center> </p></td>
+  </tr>
+  <tr>
+    <td height="60" valign="top"><p><center>陳佳君</center> </p></td>
+    <td valign="top"><p><center>美術編輯、資料統整、</center> <br />
+      <center>資料查詢、網業規劃</center> </p></td>
+    <td rowspan="3" valign="top"><p>&nbsp;</p>
+      <p><center>80%</center></p></td>
+  </tr>
+  <tr>
+    <td height="86" valign="top"><p><center>蔡鎧丞</center> </p></td>
+    <td valign="top"><p><center>分配工作、網頁製作、</center> <br />
+      <center>資料統整、資料查詢 </center></p></td>
+  </tr>
+  </table>
+  <h1>&nbsp;</h1>
+  </div>
+  <div class="clear"> </div>
+  <div id="footer">
+  <div id="insidefooter">
+  <p>
+  <p>台中市立惠文高中「特種部隊」團隊製作</p>
+  </div><div class="clear"> </div></div>
+  </div>
+
+  <!-- Go Top start -->
+    <img alt="" id="goTop" src="images/gotop.png" title="Back to Top"/>
+    <script>
+      $.extend($.easing, {
+        easeOutExpo: function (x, t, b, c, d) {
+          return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+        }
+      });
+      $("#goTop").click(function(){
+        $("html, body").animate({scrollTop: 0}, 1500, "easeOutExpo");
+      });
+    </script>
+  <!-- Go Top end -->
+</body>
+</html>
